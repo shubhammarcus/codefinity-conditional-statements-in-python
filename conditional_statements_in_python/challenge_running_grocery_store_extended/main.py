@@ -5,12 +5,12 @@ final_budget = initial_budget * changes
 result = 'blank'
 
 # Determine whether the trader made profit, loss, or broke even
-___:
-	___ = ___
-___:
-	___ = ___
-___: 
-	___ = ___
+if final_budget > initial_budget:
+    result = 'success'
+elif final_budget < initial_budget:
+    result = 'failure'
+else: 
+    result = 'budget unchanged'
 
 # Testing
 print("The final budget is:", final_budget)
